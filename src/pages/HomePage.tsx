@@ -28,7 +28,7 @@ export default function HomePage() {
       }}
       items={[
         {
-          imageSrc: "http://img.b2bpic.net/free-photo/people-taking-part-business-event_23-2149333663.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/people-taking-part-business-event_23-2149333663.jpg?_wi=1",
         },
         {
           imageSrc: "http://img.b2bpic.net/free-photo/lovely-family-enjoying-new-year-party_23-2149173314.jpg",
@@ -127,7 +127,7 @@ export default function HomePage() {
               detail: "Welcoming experience.",
             },
           ],
-          imageSrc: "http://img.b2bpic.net/free-photo/people-taking-part-business-event_23-2149333663.jpg",
+          imageSrc: "http://img.b2bpic.net/free-photo/people-taking-part-business-event_23-2149333663.jpg?_wi=2",
           imageAlt: "modern logo design minimalist",
         },
       ]}
