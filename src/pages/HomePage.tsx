@@ -6,7 +6,6 @@ import HeroTiltedCards from '@/components/sections/hero/HeroTiltedCards';
 import MetricsFeatureCards from '@/components/sections/metrics/MetricsFeatureCards';
 import TeamOverlayCards from '@/components/sections/team/TeamOverlayCards';
 import TestimonialMarqueeOverlayCards from '@/components/sections/testimonial/TestimonialMarqueeOverlayCards';
-import { Briefcase, CheckCircle, Clock, Shield, Star, Users, Zap } from "lucide-react";
 import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 
 export default function HomePage() {
