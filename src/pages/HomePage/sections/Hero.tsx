@@ -11,7 +11,7 @@ export default function HeroSection(): React.JSX.Element {
         brand="Vinanza"
         secondaryButton={{"href":"#features","text":"Our Services"}}
         textAnimation="slide-up"
-        items={[{"imageSrc":"https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1783485233634-6bmwb7vm.jpg"},{"imageSrc":"https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1783485233634-6bmwb7vm.jpg"},{"imageSrc":"https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&q=80&w=2070"}]}
+        items={[{"imageSrc":"https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1783485233634-6bmwb7vm.jpg"},{"imageSrc":"https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=2069"},{"imageSrc":"https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&q=80&w=2070"}]}
         description="Elevate Your Events with Professional Staff. Vinanza provides top-tier hospitality and event personnel tailored for corporate, private, and large-scale gatherings."
       />
     </div>
