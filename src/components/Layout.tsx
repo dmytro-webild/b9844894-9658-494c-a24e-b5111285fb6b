@@ -7,82 +7,48 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 
 export default function Layout() {
   const navItems = [
-  {
-    "name": "About",
-    "href": "#about"
-  },
-  {
-    "name": "Services",
-    "href": "#features"
-  },
-  {
-    "name": "Team",
-    "href": "#team"
-  },
-  {
-    "name": "Contact",
-    "href": "#contact"
-  },
-  {
-    "name": "Hero",
-    "href": "#hero"
-  },
-  {
-    "name": "Metrics",
-    "href": "#metrics"
-  },
-  {
-    "name": "Testimonials",
-    "href": "#testimonials"
-  }
-];
+    { name: "About", href: "#about" },
+    { name: "Services", href: "#features" },
+    { name: "Team", href: "#team" },
+    { name: "Contact", href: "#contact" },
+    { name: "Hero", href: "#hero" },
+    { name: "Metrics", href: "#metrics" },
+    { name: "Testimonials", href: "#testimonials" }
+  ];
 
   return (
     <StyleProvider buttonVariant="default" siteBackground="gridDots" heroBackground="cornerGlow">
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarFloatingLogo
-      logo="Vinanza"
-      logoImageSrc="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop"
-      ctaButton={{
-        text: "Hire Staff",
-        href: "#contact",
-      }}
-     navItems={navItems} />
+          logo="Vinanza"
+          logoImageSrc="http://img.b2bpic.net/free-photo/enterprise-establishment-operation-franchise-firm-concept_53876-13750.jpg"
+          ctaButton={{
+            text: "Hire Staff",            href: "#contact"}}
+          navItems={navItems}
+        />
       </SectionErrorBoundary>
       <main className="flex-grow">
         <Outlet />
       </main>
       <SectionErrorBoundary name="footer">
         <FooterBrand
-      brand="Vinanza"
-      columns={[
-        {
-          items: [
+          brand="Vinanza"
+          columns={[
             {
-              label: "About Us",
-              href: "#about",
+              items: [
+                { label: "About Us", href: "#about" },
+                { label: "Services", href: "#features" },
+              ],
             },
             {
-              label: "Services",
-              href: "#features",
+              items: [
+                { label: "Privacy Policy", href: "#" },
+                { label: "Terms of Service", href: "#" },
+              ],
             },
-          ],
-        },
-        {
-          items: [
-            {
-              label: "Privacy Policy",
-              href: "#",
-            },
-            {
-              label: "Terms of Service",
-              href: "#",
-            },
-          ],
-        },
-      ]}
-    />
+          ]}
+        />
       </SectionErrorBoundary>
     </StyleProvider>
   );
