@@ -43,6 +43,7 @@ export default function Layout() {
       <SectionErrorBoundary name="navbar">
         <NavbarFloatingLogo
       logo="Vinanza"
+      logoImageSrc="https://images.unsplash.com/photo-1560179707-f14e90ef3623?w=100&h=100&fit=crop"
       ctaButton={{
         text: "Hire Staff",
         href: "#contact",
