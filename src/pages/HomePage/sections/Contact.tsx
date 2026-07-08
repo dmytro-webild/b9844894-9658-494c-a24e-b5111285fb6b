@@ -6,7 +6,7 @@ import Button from "@/components/ui/Button";
 
 const primaryButton = {
   text: "Contact Us",
-  href: "mailto:hello@vinanza.com"
+  href: "mailto:vinanzallc@gmail.com"
 };
 const secondaryButton = {
   text: "Call Us",
