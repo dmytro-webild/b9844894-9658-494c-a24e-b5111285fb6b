@@ -14,9 +14,9 @@ export default function TeamSection(): React.JSX.Element {
           title="Meet Our Management Team"
           description="Dedicated professionals committed to event success."
           members={[
-            { name: "Elena Vance", role: "Director", imageSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1783478473070-shm5mxkp.png" },
-            { name: "Marcus Thorne", role: "Ops Lead", imageSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1783478473073-qq9abrct.png" },
-            { name: "Sarah Jenkins", role: "Recruiting", imageSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1783478549327-e2031yx1.png" },
+            { name: "David", role: "Server", imageSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1783478473070-shm5mxkp.png" },
+            { name: "Josue", role: "Server", imageSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1783478473073-qq9abrct.png" },
+            { name: "Seif", role: "Server", imageSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1783478549327-e2031yx1.png" },
           ]}
           textAnimation="slide-up"
         />
