@@ -43,7 +43,7 @@ const TeamInline = () => (
         </div>
 
         <TextAnimation
-          text={"Meet Our Management Team"}
+          text={"Meet Our Team"}
           variant={"slide-up"}
           gradientText={true}
           tag="h2"
