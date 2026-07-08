@@ -1,18 +1,18 @@
-// Created by add_section_from_catalog (HeroBillboardBrand).
+// Created by add_section_from_catalog (HeroBrandCarousel).
 
 import React from 'react';
-import HeroBillboardBrand from '@/components/sections/hero/HeroBillboardBrand';
+import HeroBrandCarousel from '@/components/sections/hero/HeroBrandCarousel';
 
 export default function HeroSection(): React.JSX.Element {
   return (
     <div data-webild-section="hero" data-section="hero" id="hero">
-      <HeroBillboardBrand
+      <HeroBrandCarousel
+        primaryButton={{"text":"Get a Quote","href":"#contact"}}
         brand="Vinanza"
         secondaryButton={{"href":"#features","text":"Our Services"}}
-        imageSrc="http://img.b2bpic.net/free-photo/people-taking-part-business-event_23-2149333663.jpg"
         textAnimation="slide-up"
+        items={[{"imageSrc":"http://img.b2bpic.net/free-photo/people-taking-part-business-event_23-2149333663.jpg"},{"imageSrc":"https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=2069"},{"imageSrc":"https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&q=80&w=2070"}]}
         description="Elevate Your Events with Professional Staff. Vinanza provides top-tier hospitality and event personnel tailored for corporate, private, and large-scale gatherings."
-        primaryButton={{"text":"Get a Quote","href":"#contact"}}
       />
     </div>
   );
