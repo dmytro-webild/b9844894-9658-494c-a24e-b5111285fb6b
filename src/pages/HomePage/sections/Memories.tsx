@@ -13,7 +13,7 @@ export default function MemoriesSection() {
           {
             name: "Event Setup",
             category: "Memories",
-            imageSrc: "vinanza-event-photo-1.jpg",
+            imageSrc: "vinanza-event-photo-1.jpg?_wi=2",
           },
           {
             name: "On-Site Team",
