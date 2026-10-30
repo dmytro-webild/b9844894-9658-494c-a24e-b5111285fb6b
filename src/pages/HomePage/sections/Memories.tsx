@@ -13,47 +13,47 @@ export default function MemoriesSection() {
           {
             name: "Event Setup",
             category: "Memories",
-            imageSrc: "vinanza-event-photo-1.jpg?_wi=2",
+            imageSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344229987-709vf8u8.jpg",
           },
           {
             name: "On-Site Team",
             category: "Our Core Team",
-            videoSrc: "vinanza-event-video-1",
+            videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344229991-82uw83mp.mp4",
           },
           {
             name: "Service Execution",
             category: "Event Service",
-            videoSrc: "vinanza-event-video-3",
+            videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344229994-p01fyivp.mp4",
           },
           {
             name: "Staff Operations",
             category: "Vinanza Personnel",
-            videoSrc: "vinanza-event-video-4",
+            videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344229995-cfmtokiw.mp4",
           },
           {
             name: "Event Highlights",
             category: "Memories",
-            videoSrc: "vinanza-event-video-5",
+            videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344229997-ffke6uym.mp4",
           },
           {
             name: "Captain Supervision",
             category: "Our Core Team",
-            videoSrc: "vinanza-event-video-6",
+            videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344230003-y2nh6rxp.mp4",
           },
           {
             name: "Banquet Support",
             category: "Event Service",
-            videoSrc: "vinanza-event-video-7",
+            videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344230005-q9kz0i40.mp4",
           },
           {
             name: "Uniformed Crew",
             category: "Vinanza Personnel",
-            videoSrc: "vinanza-event-video-8",
+            videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344230008-upem48y6.mp4",
           },
           {
             name: "Event Hospitality",
             category: "Memories",
-            videoSrc: "vinanza-event-video-9",
+            videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344230010-tm56r2uj.mp4",
           },
         ]}
       />
