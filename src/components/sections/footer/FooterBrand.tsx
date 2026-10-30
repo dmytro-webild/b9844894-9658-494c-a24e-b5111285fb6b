@@ -1,4 +1,4 @@
-import { ChevronRight, Mail, Phone } from "lucide-react";
+import { ChevronRight, Mail, Phone, Instagram } from "lucide-react";
 import { useButtonClick } from "@/hooks/useButtonClick";
 import AutoFillText from "@/components/ui/AutoFillText";
 
@@ -86,6 +86,17 @@ const FooterBrand = ({
                 </button>
               </div>
             )}
+            <div className="flex items-center gap-2 text-base">
+              <Instagram className="size-4 shrink-0 text-primary-cta-text" strokeWidth={2.5} aria-hidden="true" />
+              <a
+                href="https://www.instagram.com/vinanzaeventstaffing/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-base text-primary-cta-text font-semibold hover:opacity-75 transition-opacity cursor-pointer text-left"
+              >
+                @vinanzaeventstaffing
+              </a>
+            </div>
           </div>
         </div>
 

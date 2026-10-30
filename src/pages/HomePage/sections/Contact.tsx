@@ -1,6 +1,8 @@
 import ScrollReveal from "@/components/ui/ScrollReveal";
 import TextAnimation from "@/components/ui/TextAnimation";
 import Button from "@/components/ui/Button";
+import { Instagram } from "lucide-react";
+import { motion } from "motion/react";
 
 const primaryButton = {
   text: "Email vinanzallc@gmail.com",
@@ -37,6 +39,22 @@ const ContactInline = () => {
               <div className="flex flex-wrap justify-center gap-3 mt-4">
                 <Button text={primaryButton.text} href={primaryButton.href} variant="primary" />
                 <Button text={secondaryButton.text} href={secondaryButton.href} variant="secondary" animationDelay={0.1} />
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+                >
+                  <a
+                    href="https://www.instagram.com/vinanzaeventstaffing/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-center gap-2 h-10 px-6 text-sm rounded cursor-pointer secondary-button text-secondary-cta-text"
+                  >
+                    <Instagram className="size-4 shrink-0" />
+                    <span>Follow us on Instagram</span>
+                  </a>
+                </motion.div>
               </div>
             </div>
           </div>
