@@ -13,7 +13,7 @@ export default function MemoriesSection() {
           {
             name: "Event Setup",
             category: "Memories",
-            imageSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344229987-709vf8u8.jpg",
+            imageSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344229987-709vf8u8.jpg?_wi=2",
           },
           {
             name: "On-Site Team",
