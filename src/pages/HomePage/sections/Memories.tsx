@@ -7,52 +7,52 @@ export default function MemoriesSection() {
         tag="Event Service"
         title="Vinanza Staffing Personnel"
         description="Our professional crew in action, delivering reliable service standards to caterers and planners across New York City and Long Island."
-        categories={["Memories", "Our Core Team", "Event Service", "Vinanza Personnel"]}
+        categories={["Front of House", "Kitchen Staff", "Event Displays", "Highlights"]}
         textAnimation="slide-up"
         items={[
           {
-            name: "Event Setup",
-            category: "Memories",
+            name: "Buffet Service",
+            category: "Front of House",
             imageSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344229987-709vf8u8.jpg?_wi=2",
           },
           {
-            name: "On-Site Team",
-            category: "Our Core Team",
+            name: "Carving Station",
+            category: "Kitchen Staff",
             videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344229991-82uw83mp.mp4",
           },
           {
-            name: "Service Execution",
-            category: "Event Service",
+            name: "Outdoor Grill Station",
+            category: "Event Displays",
             videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344229994-p01fyivp.mp4",
           },
           {
-            name: "Staff Operations",
-            category: "Vinanza Personnel",
+            name: "Banquet Room Setup",
+            category: "Front of House",
             videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344229995-cfmtokiw.mp4",
           },
           {
             name: "Event Highlights",
-            category: "Memories",
+            category: "Highlights",
             videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344229997-ffke6uym.mp4",
           },
           {
-            name: "Captain Supervision",
-            category: "Our Core Team",
+            name: "Fresh Fruit Display",
+            category: "Event Displays",
             videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344230003-y2nh6rxp.mp4",
           },
           {
-            name: "Banquet Support",
-            category: "Event Service",
+            name: "Chef-Attended Station",
+            category: "Kitchen Staff",
             videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344230005-q9kz0i40.mp4",
           },
           {
-            name: "Uniformed Crew",
-            category: "Vinanza Personnel",
+            name: "Kitchen Team at Work",
+            category: "Kitchen Staff",
             videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344230008-upem48y6.mp4",
           },
           {
-            name: "Event Hospitality",
-            category: "Memories",
+            name: "Plating & Garnish",
+            category: "Highlights",
             videoSrc: "https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1793344230010-tm56r2uj.mp4",
           },
         ]}
