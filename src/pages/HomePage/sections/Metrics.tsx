@@ -10,13 +10,13 @@ export default function MetricsSection(): React.JSX.Element {
     <div id="metrics" data-section="metrics">
         <SectionErrorBoundary name="metrics">
               <MetricsFeatureCards
-          tag="Our Impact"
-          title="Proven Results in Event Staffing"
-          description="Delivering excellence at every touchpoint."
+          tag="Operational Standards"
+          title="Service Commitments & Standards"
+          description="Clear requirements designed for seamless collaboration with caterers and event planners."
           metrics={[
-            { value: "98%", title: "Client Satisfaction", features: ["On-time delivery", "Professionalism"] },
-            { value: "250+", title: "Events Staffed", features: ["Corporate", "Weddings"] },
-            { value: "1500+", title: "Service Hours", features: ["Hospitality", "Operations"] },
+            { value: "6 Hours", title: "Minimum Shift Booking", features: ["Guaranteed crew readiness", "Complete event coverage"] },
+            { value: "NYC & LI", title: "Regional Coverage Area", features: ["New York City (5 Boroughs)", "Long Island (Nassau & Suffolk)"] },
+            { value: "On-Site", title: "Captain Lead Model", features: ["Captains who lead crews", "Direct venue & caterer liaison"] },
           ]}
           textAnimation="fade"
         />

@@ -7,13 +7,12 @@ import { StyleProvider } from "@/components/ui/StyleProvider";
 
 export default function Layout() {
   const navItems = [
-    { name: "About", href: "#about" },
-    { name: "Services", href: "#features" },
-    { name: "Team", href: "#team" },
+    { name: "About Us", href: "#about" },
+    { name: "Capabilities", href: "#features" },
+    { name: "Standards", href: "#metrics" },
+    { name: "Our Crew", href: "#team" },
+    { name: "FAQ", href: "#faq" },
     { name: "Contact", href: "#contact" },
-    { name: "Hero", href: "#hero" },
-    { name: "Metrics", href: "#metrics" },
-    { name: "Testimonials", href: "#testimonials" }
   ];
 
   return (
@@ -21,10 +20,10 @@ export default function Layout() {
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarFloatingLogo
-          logo="Vinanza"
+          logo="Vinanza LLC"
           logoImageSrc="https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1783480187867-d78kum3a.png"
           ctaButton={{
-            text: "Hire Staff",            href: "#contact"}}
+            text: "Request Staff", href: "#contact"}}
           navItems={navItems}
         />
       </SectionErrorBoundary>
@@ -33,18 +32,20 @@ export default function Layout() {
       </main>
       <SectionErrorBoundary name="footer">
         <FooterBrand
-          brand="Vinanza"
+          brand="Vinanza LLC"
           columns={[
             {
               items: [
-                { label: "About Us", href: "#about" },
-                { label: "Services", href: "#features" },
+                { label: "About Vinanza LLC", href: "#about" },
+                { label: "Staffing Capabilities", href: "#features" },
+                { label: "Operational Standards", href: "#metrics" },
               ],
             },
             {
               items: [
-                { label: "Privacy Policy", href: "#" },
-                { label: "Terms of Service", href: "#" },
+                { label: "Our Event Personnel", href: "#team" },
+                { label: "Frequently Asked Questions", href: "#faq" },
+                { label: "Contact & Booking", href: "#contact" },
               ],
             },
           ]}

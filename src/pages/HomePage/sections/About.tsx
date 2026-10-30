@@ -10,13 +10,13 @@ export default function AboutSection(): React.JSX.Element {
     <div id="about" data-section="about">
         <SectionErrorBoundary name="about">
               <AboutFeaturesSplit
-          tag="Why Choose Vinanza"
-          title="Staffing Excellence Driven by Quality"
-          description="We specialize in matching talented, trained individuals with high-impact events. Our commitment to professionalism ensures every guest is treated with exceptional service."
+          tag="About Vinanza LLC"
+          title="Premier Event Staffing for NYC & Long Island"
+          description="Vinanza LLC supplies top-tier event personnel for caterers, event planners, corporate galas, and luxury weddings across New York City and Long Island. Our uniformed staff operate under strict standards with a mandatory 6-hour shift minimum."
           items={[
-            { icon: "CheckCircle", title: "Verified Talent", description: "Rigorous vetting process to ensure professionalism." },
-            { icon: "Shield", title: "Fully Insured", description: "Complete coverage for peace of mind." },
-            { icon: "Zap", title: "Rapid Deployment", description: "Last-minute scaling capabilities." },
+            { icon: "UserCheck", title: "Captains Who Lead Crews", description: "Every deployment is spearheaded by dedicated captains who manage on-site timelines and service pacing." },
+            { icon: "Shield", title: "Specialized Catering Expertise", description: "Proven experience collaborating seamlessly with premier venues, event planners, and kosher caterers." },
+            { icon: "Clock", title: "6-Hour Shift Minimum", description: "Standardized 6-hour minimum bookings ensure complete operational readiness for your entire event." },
           ]}
           imageSrc="http://img.b2bpic.net/free-photo/people-working-their-office_23-2149196434.jpg"
           textAnimation="fade-blur"

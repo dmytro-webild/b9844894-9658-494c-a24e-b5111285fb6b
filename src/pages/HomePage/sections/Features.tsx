@@ -10,21 +10,27 @@ export default function FeaturesSection(): React.JSX.Element {
     <div id="features" data-section="features">
         <SectionErrorBoundary name="features">
               <FeaturesBento
-          tag="Our Expertise"
-          title="Comprehensive Event Solutions"
-          description="Tailored staffing solutions for diverse event categories."
+          tag="Staffing Capabilities"
+          title="Event Personnel Solutions"
+          description="Tailored staffing for caterers, corporate galas, weddings, and private events across New York City and Long Island."
           features={[
             {
-              title: "Corporate Events",          description: "Professional support for meetings and conferences.",          bentoComponent: "info-card-marquee",          infoCards: [
-                { icon: "Briefcase", label: "Events", value: "500+" },
-                { icon: "Users", label: "Staff", value: "200+" },
+              title: "Waiters, Servers & Kitchen Staff",
+              description: "Polished front-of-house servers and back-of-house kitchen personnel equipped for fine dining, banquets, and high-volume catering workflows.",
+              bentoComponent: "info-card-marquee",
+              infoCards: [
+                { icon: "Users", label: "Roles", value: "Servers & Kitchen" },
+                { icon: "Clock", label: "Minimum Shift", value: "6 Hours" },
               ],
             },
             {
-              title: "Hospitality Crew",          description: "Top tier waitstaff and service teams.",          bentoComponent: "tilted-stack-cards",          stackCards: [
-                { icon: "Users", title: "Server", subtitle: "Staff", detail: "Expert catering service." },
-                { icon: "Clock", title: "Bar", subtitle: "Tender", detail: "Professional mixing." },
-                { icon: "Star", title: "Host", subtitle: "Service", detail: "Welcoming experience." },
+              title: "Bartenders & Captains Who Lead Crews",
+              description: "Skilled mixologists and seasoned captains who manage shift execution, direct floor crews, and maintain direct coordination with planners.",
+              bentoComponent: "tilted-stack-cards",
+              stackCards: [
+                { icon: "Briefcase", title: "Captain", subtitle: "On-Site Leader", detail: "Leads crew & oversees service flow" },
+                { icon: "Wine", title: "Bartender", subtitle: "Beverage Service", detail: "Cocktail preparation & bar service" },
+                { icon: "Utensils", title: "Server", subtitle: "Dining Crew", detail: "Plated, pass, and buffet service" },
               ],
             },
           ]}
