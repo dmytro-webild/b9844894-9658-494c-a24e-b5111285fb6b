@@ -10,9 +10,9 @@ export default function AboutSection(): React.JSX.Element {
     <div id="about" data-section="about">
         <SectionErrorBoundary name="about">
               <AboutFeaturesSplit
-          tag="About Vinanza LLC"
+          tag="About Vinanza Staffing"
           title="Premier Event Staffing for NYC & Long Island"
-          description="Vinanza LLC supplies top-tier event personnel for caterers, event planners, corporate galas, and luxury weddings across New York City and Long Island. Our uniformed staff operate under strict standards with a mandatory 6-hour shift minimum."
+          description="Vinanza Staffing supplies top-tier event personnel for caterers, event planners, corporate galas, and luxury weddings across New York City and Long Island. Our uniformed staff operate under strict standards with a mandatory 6-hour shift minimum."
           items={[
             { icon: "UserCheck", title: "Captains Who Lead Crews", description: "Every deployment is spearheaded by dedicated captains who manage on-site timelines and service pacing." },
             { icon: "Shield", title: "Specialized Catering Expertise", description: "Proven experience collaborating seamlessly with premier venues, event planners, and kosher caterers." },

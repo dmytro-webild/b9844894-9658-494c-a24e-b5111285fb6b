@@ -8,7 +8,7 @@ export default function HeroSection(): React.JSX.Element {
     <div data-webild-section="hero" data-section="hero" id="hero">
       <HeroBrandCarousel
         primaryButton={{"text":"Request Staffing","href":"#contact"}}
-        brand="Vinanza LLC"
+        brand="Vinanza Staffing"
         secondaryButton={{"href":"#features","text":"Capabilities"}}
         textAnimation="slide-up"
         items={[{"imageSrc":"https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=2069"},{"imageSrc":"https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1783485233634-6bmwb7vm.jpg"},{"imageSrc":"https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&q=80&w=2070"}]}

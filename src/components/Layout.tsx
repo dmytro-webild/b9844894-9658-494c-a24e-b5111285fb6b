@@ -20,7 +20,7 @@ export default function Layout() {
       <SiteBackgroundSlot />
       <SectionErrorBoundary name="navbar">
         <NavbarFloatingLogo
-          logo="Vinanza LLC"
+          logo="Vinanza Staffing"
           logoImageSrc="https://storage.googleapis.com/webild/users/user_3GCXkgaOrxONyQE8SfG9tbExgNj/uploaded-1783480187867-d78kum3a.png"
           ctaButton={{
             text: "Request Staff", href: "#contact"}}
@@ -32,14 +32,14 @@ export default function Layout() {
       </main>
       <SectionErrorBoundary name="footer">
         <FooterBrand
-          brand="Vinanza LLC"
+          brand="Vinanza Staffing"
           email="vinanzallc@gmail.com"
           phone="(929) 489-6802"
           copyright="© 2026 Vinanza LLC. All rights reserved."
           columns={[
             {
               items: [
-                { label: "About Vinanza LLC", href: "#about" },
+                { label: "About Vinanza Staffing", href: "#about" },
                 { label: "Staffing Capabilities", href: "#features" },
                 { label: "Operational Standards", href: "#metrics" },
               ],

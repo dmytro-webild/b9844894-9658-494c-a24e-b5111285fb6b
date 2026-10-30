@@ -18,7 +18,7 @@ const MemoriesInline = () => {
             </motion.span>
 
             <TextAnimation
-              text={"Vinanza LLC Personnel"}
+              text={"Vinanza Staffing Personnel"}
               variant={"slide-up"}
               gradientText={true}
               tag="h2"
