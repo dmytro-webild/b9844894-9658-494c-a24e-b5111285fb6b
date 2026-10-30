@@ -10,21 +10,21 @@ import { UserCheck, ShieldCheck, Clock, MapPin, Check } from "lucide-react";
 const trustPoints = [
   {
     title: "Trained and vetted staff",
-    description: "Rigorously background-checked catering professionals equipped for fine dining, banquets, and high-volume catering.",
+    description: "Experienced catering professionals equipped for fine dining, banquets, and high-volume catering.",
     icon: UserCheck,
-    highlights: ["Background-checked personnel", "Banquet & fine dining trained", "Standardized professional attire"],
+    highlights: ["Banquet & fine dining experience", "Standardized professional attire"],
   },
   {
     title: "Fully insured",
-    description: "Comprehensive general liability and workers' compensation coverage protecting your venue and peace of mind.",
+    description: "Insured crews for your peace of mind.",
     icon: ShieldCheck,
-    highlights: ["General liability protection", "Workers' compensation insured", "Certificate of Insurance (COI) available"],
+    highlights: [],
   },
   {
     title: "Reliable on-time crews",
     description: "Punctual, dependable teams managed on-site by dedicated captains for seamless shift execution.",
     icon: Clock,
-    highlights: ["Captain-led shift supervision", "Mandatory pre-event briefings", "Punctual, ready-to-work arrival"],
+    highlights: ["Captain-led shift supervision", "Punctual, ready-to-work arrival"],
   },
   {
     title: "NYC & Long Island coverage",
@@ -85,16 +85,18 @@ export default function MetricsSection(): React.JSX.Element {
                         </p>
                       </div>
 
-                      <div className="flex flex-col gap-2.5 pt-4 border-t border-foreground/10">
-                        {item.highlights.map((highlight) => (
-                          <div key={highlight} className="flex items-center gap-3">
-                            <div className="flex items-center justify-center shrink-0 size-5 rounded-full bg-amber-500/20 text-amber-400">
-                              <Check className="size-3 text-amber-400" strokeWidth={3} />
+                      {item.highlights.length > 0 && (
+                        <div className="flex flex-col gap-2.5 pt-4 border-t border-foreground/10">
+                          {item.highlights.map((highlight) => (
+                            <div key={highlight} className="flex items-center gap-3">
+                              <div className="flex items-center justify-center shrink-0 size-5 rounded-full bg-amber-500/20 text-amber-400">
+                                <Check className="size-3 text-amber-400" strokeWidth={3} />
+                              </div>
+                              <span className="text-sm font-medium text-foreground/90">{highlight}</span>
                             </div>
-                            <span className="text-sm font-medium text-foreground/90">{highlight}</span>
-                          </div>
-                        ))}
-                      </div>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   );
                 })}

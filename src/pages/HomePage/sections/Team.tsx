@@ -11,12 +11,12 @@ const staffStandards = [
   },
   {
     title: "Trained & Vetted",
-    description: "Rigorously background-checked and evaluated for fine dining etiquette, banquet service, food safety, and guest interaction.",
+    description: "Evaluated for fine dining etiquette, banquet service, and guest interaction.",
     icon: UserCheck,
   },
   {
     title: "Punctual & Prepared",
-    description: "Crews arrive early for mandatory pre-event briefings, ensuring full venue familiarity and operational readiness before guests arrive.",
+    description: "Crews arrive early, ensuring full venue familiarity and operational readiness before guests arrive.",
     icon: Clock,
   },
   {
