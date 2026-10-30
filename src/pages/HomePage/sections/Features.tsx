@@ -2,35 +2,115 @@
 // file as the canonical source for the "features" section.
 
 import React from 'react';
-import FeaturesBento from '@/components/sections/features/FeaturesBento';
 import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
+import TextAnimation from "@/components/ui/TextAnimation";
+import ScrollReveal from "@/components/ui/ScrollReveal";
+import { Utensils, Wine, Crown, ChefHat, Users } from "lucide-react";
+
+const capabilities = [
+  {
+    title: "Waiters/Servers",
+    description: "Polished front-of-house staff for plated dining, tray-passed appetizers, and banquet service.",
+    icon: Utensils,
+  },
+  {
+    title: "Bartenders",
+    description: "Skilled mixologists proficient in full-bar setup, high-volume cocktail service, and bar management.",
+    icon: Wine,
+  },
+  {
+    title: "Captains",
+    description: "Experienced on-site leaders who direct floor crews, manage service pacing, and coordinate with planners.",
+    icon: Crown,
+  },
+  {
+    title: "Kitchen Staff",
+    description: "Back-of-house personnel for food prep, plating assistance, and kitchen station organization.",
+    icon: ChefHat,
+  },
+  {
+    title: "Event Support Crew",
+    description: "Dedicated setup, teardown, and logistics support to keep your venue running seamlessly.",
+    icon: Users,
+  },
+];
 
 export default function FeaturesSection(): React.JSX.Element {
   return (
     <div id="features" data-section="features">
-        <SectionErrorBoundary name="features">
-              <FeaturesBento
-          tag="Our Expertise"
-          title="Comprehensive Event Solutions"
-          description="Tailored staffing solutions for diverse event categories."
-          features={[
-            {
-              title: "Corporate Events",          description: "Professional support for meetings and conferences.",          bentoComponent: "info-card-marquee",          infoCards: [
-                { icon: "Briefcase", label: "Events", value: "500+" },
-                { icon: "Users", label: "Staff", value: "200+" },
-              ],
-            },
-            {
-              title: "Hospitality Crew",          description: "Top tier waitstaff and service teams.",          bentoComponent: "tilted-stack-cards",          stackCards: [
-                { icon: "Users", title: "Server", subtitle: "Staff", detail: "Expert catering service." },
-                { icon: "Clock", title: "Bar", subtitle: "Tender", detail: "Professional mixing." },
-                { icon: "Star", title: "Host", subtitle: "Service", detail: "Welcoming experience." },
-              ],
-            },
-          ]}
-          textAnimation="slide-up"
-        />
-        </SectionErrorBoundary>
-      </div>
+      <SectionErrorBoundary name="features">
+        <section aria-label="Services and Capabilities" className="py-20">
+          <div className="flex flex-col gap-10 md:gap-12">
+            <div className="flex flex-col items-center gap-2 w-content-width mx-auto text-center">
+              <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+                <p>Staffing Capabilities</p>
+              </div>
+
+              <TextAnimation
+                text="Services & Capabilities"
+                variant="slide-up"
+                gradientText={true}
+                tag="h2"
+                className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+              />
+
+              <TextAnimation
+                text="Tailored event staffing solutions for caterers, event planners, corporate galas, and private gatherings across New York City and Long Island."
+                variant="slide-up"
+                gradientText={false}
+                tag="p"
+                className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance"
+              />
+            </div>
+
+            {/* Gold-on-Black Strip of Trust Points */}
+            <div className="w-full bg-black border-y border-amber-500/40 py-5 px-4 md:px-8 my-2 shadow-xl">
+              <div className="w-content-width mx-auto flex flex-wrap items-center justify-around gap-6 md:gap-8 text-center text-amber-400 font-semibold tracking-wide text-sm md:text-base uppercase">
+                <div className="flex items-center gap-2">
+                  <span className="text-amber-500 text-xs">✦</span>
+                  <span>Trained & Vetted Staff</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-amber-500 text-xs">✦</span>
+                  <span>Fully Insured</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-amber-500 text-xs">✦</span>
+                  <span>Reliable On-Time Crews</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-amber-500 text-xs">✦</span>
+                  <span>NYC & Long Island Coverage</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 5 Services/Capabilities List */}
+            <ScrollReveal variant="fade-blur">
+              <div className="w-content-width mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {capabilities.map((item) => {
+                  const IconComponent = item.icon;
+                  return (
+                    <div
+                      key={item.title}
+                      className="flex flex-col gap-4 p-6 xl:p-7 card rounded h-full transition-all duration-300 hover:border-amber-500/30"
+                    >
+                      <div className="flex items-center justify-center shrink-0 size-12 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                        <IconComponent className="size-6 text-amber-400" strokeWidth={2} />
+                      </div>
+                      <div className="flex flex-col gap-2">
+                        <h3 className="text-2xl font-semibold leading-snug text-foreground">{item.title}</h3>
+                        <p className="text-base leading-snug text-foreground/80">{item.description}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+      </SectionErrorBoundary>
+    </div>
   );
 }
+
