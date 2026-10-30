@@ -10,7 +10,7 @@ export default function Layout() {
     { name: "About Us", href: "#about" },
     { name: "Capabilities", href: "#features" },
     { name: "Standards", href: "#metrics" },
-    { name: "Our Crew", href: "#team" },
+    { name: "Our Staff", href: "#team" },
     { name: "FAQ", href: "#faq" },
     { name: "Contact", href: "#contact" },
   ];
@@ -33,6 +33,9 @@ export default function Layout() {
       <SectionErrorBoundary name="footer">
         <FooterBrand
           brand="Vinanza LLC"
+          email="vinanzallc@gmail.com"
+          phone="(929) 489-6802"
+          copyright="© 2026 Vinanza LLC. All rights reserved."
           columns={[
             {
               items: [
@@ -43,7 +46,7 @@ export default function Layout() {
             },
             {
               items: [
-                { label: "Our Event Personnel", href: "#team" },
+                { label: "Our Professional Staff", href: "#team" },
                 { label: "Frequently Asked Questions", href: "#faq" },
                 { label: "Contact & Booking", href: "#contact" },
               ],

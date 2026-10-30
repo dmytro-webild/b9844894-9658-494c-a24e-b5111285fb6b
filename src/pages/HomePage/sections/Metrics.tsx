@@ -2,25 +2,108 @@
 // file as the canonical source for the "metrics" section.
 
 import React from 'react';
-import MetricsFeatureCards from '@/components/sections/metrics/MetricsFeatureCards';
 import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
+import TextAnimation from "@/components/ui/TextAnimation";
+import ScrollReveal from "@/components/ui/ScrollReveal";
+import { UserCheck, ShieldCheck, Clock, MapPin, Check } from "lucide-react";
+
+const trustPoints = [
+  {
+    title: "Trained and vetted staff",
+    description: "Rigorously background-checked catering professionals equipped for fine dining, banquets, and high-volume catering.",
+    icon: UserCheck,
+    highlights: ["Background-checked personnel", "Banquet & fine dining trained", "Standardized professional attire"],
+  },
+  {
+    title: "Fully insured",
+    description: "Comprehensive general liability and workers' compensation coverage protecting your venue and peace of mind.",
+    icon: ShieldCheck,
+    highlights: ["General liability protection", "Workers' compensation insured", "Certificate of Insurance (COI) available"],
+  },
+  {
+    title: "Reliable on-time crews",
+    description: "Punctual, dependable teams managed on-site by dedicated captains for seamless shift execution.",
+    icon: Clock,
+    highlights: ["Captain-led shift supervision", "Mandatory pre-event briefings", "Punctual, ready-to-work arrival"],
+  },
+  {
+    title: "NYC & Long Island coverage",
+    description: "Extensive regional coverage serving all five NYC boroughs as well as Nassau and Suffolk Counties.",
+    icon: MapPin,
+    highlights: ["5 NYC Boroughs covered", "Nassau & Suffolk Counties", "Experienced local event crews"],
+  },
+];
 
 export default function MetricsSection(): React.JSX.Element {
   return (
     <div id="metrics" data-section="metrics">
-        <SectionErrorBoundary name="metrics">
-              <MetricsFeatureCards
-          tag="Operational Standards"
-          title="Service Commitments & Standards"
-          description="Clear requirements designed for seamless collaboration with caterers and event planners."
-          metrics={[
-            { value: "6 Hours", title: "Minimum Shift Booking", features: ["Guaranteed crew readiness", "Complete event coverage"] },
-            { value: "NYC & LI", title: "Regional Coverage Area", features: ["New York City (5 Boroughs)", "Long Island (Nassau & Suffolk)"] },
-            { value: "On-Site", title: "Captain Lead Model", features: ["Captains who lead crews", "Direct venue & caterer liaison"] },
-          ]}
-          textAnimation="fade"
-        />
-        </SectionErrorBoundary>
-      </div>
+      <SectionErrorBoundary name="metrics">
+        <section aria-label="Operational Standards" className="py-20">
+          <div className="flex flex-col gap-10 md:gap-12">
+            <div className="flex flex-col items-center gap-2 w-content-width mx-auto text-center">
+              <div className="px-3 py-1 mb-1 text-sm card rounded w-fit">
+                <p>Operational Standards</p>
+              </div>
+
+              <TextAnimation
+                text="Service Commitments & Standards"
+                variant="fade"
+                gradientText={true}
+                tag="h2"
+                className="md:max-w-8/10 text-6xl 2xl:text-7xl leading-[1.15] font-semibold text-center text-balance"
+              />
+
+              <TextAnimation
+                text="Clear operational requirements designed for seamless collaboration with caterers and event planners."
+                variant="fade"
+                gradientText={false}
+                tag="p"
+                className="md:max-w-7/10 text-lg md:text-xl leading-snug text-center text-balance"
+              />
+            </div>
+
+            <ScrollReveal variant="fade-blur">
+              <div className="w-content-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 xl:gap-8">
+                {trustPoints.map((item) => {
+                  const IconComponent = item.icon;
+                  return (
+                    <div
+                      key={item.title}
+                      className="flex flex-col justify-between gap-6 p-6 xl:p-8 card rounded h-full"
+                    >
+                      <div className="flex flex-col gap-3">
+                        <div className="flex items-center gap-4">
+                          <div className="flex items-center justify-center shrink-0 size-12 rounded-lg bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                            <IconComponent className="size-6 text-amber-400" strokeWidth={2} />
+                          </div>
+                          <h3 className="text-2xl xl:text-3xl font-semibold leading-snug text-foreground">
+                            {item.title}
+                          </h3>
+                        </div>
+                        <p className="text-base text-foreground/80 leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
+
+                      <div className="flex flex-col gap-2.5 pt-4 border-t border-foreground/10">
+                        {item.highlights.map((highlight) => (
+                          <div key={highlight} className="flex items-center gap-3">
+                            <div className="flex items-center justify-center shrink-0 size-5 rounded-full bg-amber-500/20 text-amber-400">
+                              <Check className="size-3 text-amber-400" strokeWidth={3} />
+                            </div>
+                            <span className="text-sm font-medium text-foreground/90">{highlight}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </ScrollReveal>
+          </div>
+        </section>
+      </SectionErrorBoundary>
+    </div>
   );
 }
+
