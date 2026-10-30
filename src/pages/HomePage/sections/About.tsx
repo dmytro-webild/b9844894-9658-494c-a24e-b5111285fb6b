@@ -18,7 +18,7 @@ export default function AboutSection(): React.JSX.Element {
             { icon: "Shield", title: "Specialized Catering Expertise", description: "Proven experience collaborating seamlessly with premier venues, event planners, and kosher caterers." },
             { icon: "Clock", title: "6-Hour Shift Minimum", description: "Standardized 6-hour minimum bookings ensure complete operational readiness for your entire event." },
           ]}
-          imageSrc="vinanza-event-photo-1.jpg"
+          imageSrc="vinanza-event-photo-1.jpg?_wi=1"
           textAnimation="fade-blur"
         />
         </SectionErrorBoundary>
